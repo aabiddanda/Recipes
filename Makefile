@@ -3,4 +3,4 @@ all:
 	pdflatex cookbook.tex
 
 clean:
-	rm *.out *.aux *.log *.toc *.pdf
+	rm -f *.out *.aux *.log *.toc *.pdf
