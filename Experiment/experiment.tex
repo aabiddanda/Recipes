@@ -1,10 +1,33 @@
 % The Beginnings of the 'Computer Scientists Cookbook'
 \documentclass[oneside]{recipe}
+\usepackage{algorithmicx}
+\usepackage[ruled]{algorithm}
+\usepackage{algpseudocode}
+% \usepackage{algpascal}
+% \usepackage{algc}
 
 \begin{document}
 \tableofcontents
 \chapter{Foreword}
 
+
+\chapter{Breakfast}
+
+\section*{Eggs in a Basket}
+\begin{algorithm}[H]
+\caption{Euclids's algorithm}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{HELLO}{$a,b$}
+   \State $r\gets a\bmod b$
+   \While{$r\not=0$}
+      \State $a\gets b$
+      \State $b\gets r$
+      \State $r\gets a\bmod b$
+   \EndWhile\label{euclidendwhile}
+   \State \Return $b$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
 
 
 
