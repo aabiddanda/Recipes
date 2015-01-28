@@ -5,7 +5,11 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 
-% \setlist[itemize]{itemsep=0mm}
+% \@namedef{multicols*}{%
+
+
+
+
 
 \begin{document}
 
@@ -27,19 +31,25 @@
 \chapter{Foreword}
 \include{foreword}
 
+
+
 \chapter{Brunch}
 \recipe{Eggs in a Basket}
 \begin{multicols}{2}
-\begin{itemize}[itemsep=1mm]
+\raggedcolumns
+\begin{itemize}
 \item Slice of Bread
 \item Egg
 \item Butter
 \item Black Pepper
 \item Green Onion (optional)
+ % \item{HODOR}
+ % \item{HODOR}
+ % \item{HODOR}
+ % \item{HODOR}
 \end{itemize}
 \columnbreak
 \begin{enumerate}
-	\setlength{\itemsep}{5pt}
 	\item Heat pan to medium-low, coat with small amount of butter
 	\item Use cup to make hole in bread (place bread cutout aside)
 	\item Crack egg into hole, and cook 1 minute until egg creates seal with bread
