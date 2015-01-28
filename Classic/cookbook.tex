@@ -1,28 +1,28 @@
 \documentclass[oneside]{recipe}
 \usepackage{hyperref}
 \usepackage{graphicx}
-% \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage{enumitem}
 
-% \@namedef{multicols*}{%
-
-
-
-
+% Defining custom commands
+\newcommand{\recipecolumn}[2]{
+	\begin{multicols}{2}
+	\raggedcolumns
+	#1
+	\columnbreak
+	#2
+	\end{multicols}
+}
 
 \begin{document}
-
 \begin{titlepage}
 \begin{center}
-
 	\textbf{\Huge The College Cookbook }\\
 	\vspace*{\fill}
 	\includegraphics[scale=1.75]{college}\\
 	\vspace*{\fill}
-	\textit{by}\\
+	\textit{\large by}\\
 	\textbf{\large Arjun Biddanda}
-
 	\vspace*{\fill}
 	\end{center}
 \end{titlepage}
@@ -31,46 +31,60 @@
 \chapter{Foreword}
 \include{foreword}
 
-
-
 \chapter{Brunch}
 \recipe{Eggs in a Basket}
-\begin{multicols}{2}
-\raggedcolumns
-\begin{itemize}
-\item Slice of Bread
-\item Egg
-\item Butter
-\item Black Pepper
-\item Green Onion (optional)
- % \item{HODOR}
- % \item{HODOR}
- % \item{HODOR}
- % \item{HODOR}
-\end{itemize}
-\columnbreak
-\begin{enumerate}
-	\item Heat pan to medium-low, coat with small amount of butter
-	\item Use cup to make hole in bread (place bread cutout aside)
-	\item Crack egg into hole, and cook 1 minute until egg creates seal with bread
-	\item Flip bread slice, allowing other side of the hole to be sealed with egg. Cook desired amount
-	\item After cooking garnish with salt and pepper and thinly sliced green onions.
-\end{enumerate}
-\end{multicols}
-
+\recipecolumn{
+	\begin{itemize}
+		\item Slice of Bread
+		\item Egg
+		\item Butter
+		\item Black Pepper
+		\item Green Onion (optional)
+	\end{itemize}
+}{
+	\begin{enumerate}
+		\item Heat pan to medium-low, coat with small amount of butter
+		\item Use cup to make hole in bread (place bread cutout aside)
+		\item Crack egg into hole, and cook 1 minute until egg creates seal with bread
+		\item Flip bread slice, allowing other side of the hole to be sealed with egg. Cook desired amount
+		\item After cooking garnish with salt and pepper and thinly sliced green onions.
+	\end{enumerate}
+}
+\newpage
 \recipe{Stovetop Granola}
-\ingred{
-	Butter;
-	Olive Oil;
-	Brown Sugar;
-	Nutmeg;
-	Oats;
-	Almonds (chopped);
-	Dried Cranberries;
-	Desicated Coconut (optional);
+\recipecolumn{
+	\begin{itemize}
+		\item Butter;
+		\item Olive Oil;
+		\item Brown Sugar;
+		\item Nutmeg;
+		\item Oats;
+		\item Almonds (chopped);
+		\item Dried Cranberries;
+		\item Desicated Coconut (optional);
+	\end{itemize}
+}{
+	\begin{enumerate}
+		\item Heat up oil and toss oats in the pan on medium heat
+		\item Cook oats until they start to brown and crisp. Place oats aside in a bowl and melt butter in same pan
+		\item Place brown sugar and nutmeg in pan as well and toss in oats
+		\item Let oats get coated in brown sugar mixture, then add other ingredients
+		\item After cooking, let cool and store in a container for later
+	\end{enumerate}
 }
 
-This recipe is very versatile and builds off of the recipe from \href{http://allrecipes.com/recipe/stovetop-granola/}{\underline{here}}. Heat up oil and toss oats in the pan. Cook oats until they start to brown and crisp. Place oats aside in a bowl and melt butter in same pan. Place brown sugar and nutmeg in pan as well and toss in oats. Let oats get coated in brown sugar mixture, and then add other ingredients. After cooking, let cool and store in a container for later. Lots of flexibility in what toppings to add, and custom granola is a great treat on top of regular cereal or ice cream even.
+% \ingred{
+% 	Butter;
+% 	Olive Oil;
+% 	Brown Sugar;
+% 	Nutmeg;
+% 	Oats;
+% 	Almonds (chopped);
+% 	Dried Cranberries;
+% 	Desicated Coconut (optional);
+% }
+
+% This recipe is very versatile and builds off of the recipe from \href{http://allrecipes.com/recipe/stovetop-granola/}{\underline{here}}. Heat up oil and toss oats in the pan. Cook oats until they start to brown and crisp. Place oats aside in a bowl and melt butter in same pan. Place brown sugar and nutmeg in pan as well and toss in oats. Let oats get coated in brown sugar mixture, and then add other ingredients. After cooking, let cool and store in a container for later. Lots of flexibility in what toppings to add, and custom granola is a great treat on top of regular cereal or ice cream even.
 
 \recipe{Sweetened Banana Pancakes}
 % Need measurements for filling
