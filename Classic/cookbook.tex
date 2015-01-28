@@ -1,7 +1,11 @@
 \documentclass[oneside]{recipe}
 \usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{amsmath}
+% \usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+% \setlist[itemize]{itemsep=0mm}
 
 \begin{document}
 
@@ -10,7 +14,6 @@
 
 	\textbf{\Huge The College Cookbook }\\
 	\vspace*{\fill}
-	% \textbf{\huge The Title of Image Comes Here}\\[0.5cm]
 	\includegraphics[scale=1.75]{college}\\
 	\vspace*{\fill}
 	\textit{by}\\
@@ -26,14 +29,24 @@
 
 \chapter{Brunch}
 \recipe{Eggs in a Basket}
-\ingred{Slice of Bread; 
-Egg;
-Butter;
-Black Pepper;
-Green Onion (finely chopped)
-}
-
-A timeless classic, this is a simple and easy way to make eggs look really good. Heat the pan to medium-low heat, and coat with light butter. Use a cup to make a hole in the bread, and place this bread cutout aside. Place the bread slice with the hole onto the pan and crack an egg into the hole. After a minute or so, until the egg has formed a seal with the bread. Carefully flip so that the other side of the egg cooks and forms a seal as well (\textit{\textbf{Note: } The flip is the hardest part, it might take a couple times to get it completely right}). Garnish with a sprinkle of black pepper and sliced green onions.
+\begin{multicols}{2}
+\begin{itemize}[itemsep=1mm]
+\item Slice of Bread
+\item Egg
+\item Butter
+\item Black Pepper
+\item Green Onion (optional)
+\end{itemize}
+\columnbreak
+\begin{enumerate}
+	\setlength{\itemsep}{5pt}
+	\item Heat pan to medium-low, coat with small amount of butter
+	\item Use cup to make hole in bread (place bread cutout aside)
+	\item Crack egg into hole, and cook 1 minute until egg creates seal with bread
+	\item Flip bread slice, allowing other side of the hole to be sealed with egg. Cook desired amount
+	\item After cooking garnish with salt and pepper and thinly sliced green onions.
+\end{enumerate}
+\end{multicols}
 
 \recipe{Stovetop Granola}
 \ingred{
@@ -72,14 +85,14 @@ Cheese;
 }
 This is a simple twist on scrambled eggs, but results in a very hearty breakfast. Cornbread is a very versatile dish that you can either buy at the store ready-made or make with the recipe \href{}{\underline{here}}. In a bowl, whisk eggs milk and salsa together. Place butter in a pan and allow to melt under medium heat. Cook sausage thoroughly in pan and place into egg mixture. Again place butter in pan and melt, and then place cornbread pieces on pan. Cover cornbread pieces with egg mixture. Periodically scramble eggs in pan so as to mix cornbread and eggs. Turn to low heat and top with cheese and hot sauce (optional) and cover pan for 3 minutes. Serve while hot with tortillas. 
 
-\recipe{Sweet Potato Pancakes}
-\ingred{Sweet Potatoes (sliced into hash brown consistency);
-Flour;
-Egg;
-Onion (finely diced);
-Black Pepper
-}
-% Finish this up later too, and mention to be served with salmon and lemon-dill sauce.
+% \recipe{Sweet Potato Pancakes}
+% \ingred{Sweet Potatoes (sliced into hash brown consistency);
+% Flour;
+% Egg;
+% Onion (finely diced);
+% Black Pepper
+% }
+% % Finish this up later too, and mention to be served with salmon and lemon-dill sauce.
 
 
 \chapter{Appetizers}
