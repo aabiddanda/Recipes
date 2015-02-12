@@ -1,4 +1,4 @@
-#The College Student's Cookbook
+#My Personal Cookbook
 
 Written as a series of recipes that I encountered after first having to cook by myself during my last two years of undergrad, this cookbook has evolved to something that provides tasty and fast recipes for people to try. 
 
