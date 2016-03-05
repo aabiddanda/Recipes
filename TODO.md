@@ -7,3 +7,5 @@
 4. Better Picture for front
 
 5. Add some recipes
+	a. Revise brussel sprouts recipe
+	b. Add orange balsamic glaze 
