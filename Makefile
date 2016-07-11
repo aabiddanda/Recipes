@@ -1,6 +1,6 @@
 all:
-	pdflatex cookbook.tex
-	pdflatex cookbook.tex
+	xelatex cookbook
+	xelatex cookbook
 
 clean:
 	rm -f *.out *.aux *.log *.toc *.pdf
