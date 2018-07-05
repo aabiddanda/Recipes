@@ -1,9 +1,5 @@
 all:
-	xelatex cookbook
-	xelatex cookbook
+	latexmk -pdf -xelatex -f cookbook.tex
 
 clean:
-	rm -f *.out *.aux *.log *.toc
-
-deepclean:
-	rm -f *.out *.aux *.log *.toc *.pdf
+	latexmk -C
